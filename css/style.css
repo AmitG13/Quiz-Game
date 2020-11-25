@@ -1,0 +1,123 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
+  body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("ppr.jpg");
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 40%;
+    background-color: burlywood;
+    border-radius: 53px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: lightgrey;
+  border-radius: 43px;
+  padding: 5px 10px;
+  color: black;
+  outline: none;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    background-color: lightgreen;
+    color: black;
+  }
+  
+  .btn.wrong {
+    background-color: red;
+  }
+  
+  .start-btn, .next-btn, .submit-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .result {
+    text-emphasis: size 20px;
+    font-size: 22px;
+      padding: 10px 20px;
+      color: #000000;
+      position: relative;
+      margin: 0 20px;
+  }
+  
+  /*.spec-result{
+    resolution: bottom 10px;
+  }*/
+  
+  .timer{
+    display: flex;
+    color:red;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .th{
+    background-color: whitesmoke;
+    color: w
+  hite;
+  }
+  .table{
+    width:100%;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  

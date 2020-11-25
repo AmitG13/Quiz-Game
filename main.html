@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/style.css" rel="stylesheet">
+  
+  <title>Quiz Game</title> 
+</head>
+<body>
+  <div class="container">
+    <div id="question-container" class="hide">
+      <h1><p id="timer" class="timer">Duration</p> </h1>
+
+      <div id="question" style="font-size: 18px;font-weight: 600;">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    
+    <div id="report-container" class="hide result" >
+      <h2 style="text-align: center;"><span style="background-color: whitesmoke; padding: 8px;">Score Sheet</span></h2>
+      <table id="result-table" class="table">
+        <tr>
+          <th id="Name">Name</th>
+          <th id="pname" style="text-transform: capitalize;">PName</th>
+        </tr>
+        <tr>
+          <th id="sc">Score</th>
+          <th id="score">Score</th>
+        </tr>
+        <tr>
+          <th id="cq">Correct Questions</th>
+          <th id="correct">Correct</th>
+        </tr>
+        <tr>
+          <th id="wq">Wrong Questions</th>
+          <th id="wrong">Wrong</th>
+        </tr>
+        <tr>
+          <th id="tt">Total Time</th>
+          <th id="total">Time</th>
+        </tr>
+
+      </table>
+      <table id="my-table" class="table">
+<tr>
+          <th class="th">Question No.</th>
+          <th class="th">Time Taken</th>
+        </tr>
+        
+      </table>
+    </div>
+
+    <div class="controls">
+        <div id="inputText" style="width: 84%; margin: auto 0em;">
+          <span style="font-size: 20px;font-weight: 600;">Your Name:</span> <input style="height: 30px;width: 20em;border: 1px solid black;
+          border-radius: 10px;" type="text" id="username" name="username" /> 
+        </div>
+        <div>
+          <button id="start-btn" class="start-btn btn">Start</button>
+        </div>
+      
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+      <button id="submit-btn" class="submit-btn btn hide">Submit</button>
+      <button id="restart-btn" class="submit-btn btn hide">Retest</button>
+    </div>
+  </div>
+  <script  src="js/script.js"></script>
+</body>
+</html>
